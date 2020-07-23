@@ -2,12 +2,9 @@
   "name": "webpack-demo",
   "version": "1.0.0",
   "scripts": {
-    "rollup-start": "rollup --config bundlers/rollup/rollup.config.js -c -w",
-    "rollup-build-dev": "rollup --config bundlers/rollup/rollup.config.js",
-    "rollup-build-prod": "rollup --config bundlers/rollup/rollup.config.js",
-    "webpack-start": "node bundlers/webpack/dev.server.js --port 8080",
-    "webpack-build-dev": "webpack --config bundlers/webpack/webpack.dev.js",
-    "webpack-build-prod": "webpack --config bundlers/webpack/webpack.prod.js"
+    "start": "node bundlers/webpack/dev.server.js --port 8080",
+    "build-dev": "webpack --config webpack/webpack.dev.js",
+    "build-prod": "webpack --config webpack/webpack.prod.js"
   },
   "license": "ISC",
   "devDependencies": {

@@ -21,20 +21,20 @@ module.exports = () => {
                                 fallback: require.resolve('base64-inline-loader'),
                             },
                         },
-                        // {
-                        //     loader: 'image-webpack-loader',
-                        //     options: {
-                        //         disable: false,
-                        //         mozjpeg: {
-                        //             progressive: true,
-                        //             quality: 75,
-                        //         },
-                        //         pngquant: {
-                        //             quality: [0.65, 0.9],
-                        //             speed: 4,
-                        //         },
-                        //     },
-                        // },
+                        {
+                            loader: 'image-webpack-loader',
+                            options: {
+                                disable: false,
+                                mozjpeg: {
+                                    progressive: true,
+                                    quality: 75,
+                                },
+                                pngquant: {
+                                    quality: [0.65, 0.9],
+                                    speed: 4,
+                                },
+                            },
+                        },
                     ],
                 },
                 {
