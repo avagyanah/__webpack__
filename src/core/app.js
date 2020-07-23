@@ -8,6 +8,7 @@ export class App extends PIXI.Application {
   }
 
   ready() {
+    // console.warn('eka');
     // const sprite = new PIXI.Sprite.from(PIXI.Texture.from('icon.jpg'));
     // this.stage.addChild(sprite);
   }
