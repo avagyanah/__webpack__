@@ -1,23 +1,22 @@
-// styles
-require('../../styles/index.scss');
+// // styles
+// require('../../styles/index.scss');
 
-// sounds
-require('../../assets/sounds/bark.mp3');
-require('../../assets/sounds/happy-sheep.mp3');
-require('../../assets/sounds/loop.mp3');
-require('../../assets/sounds/lose.mp3');
-require('../../assets/sounds/tap.mp3');
-require('../../assets/sounds/win.mp3');
+// // sounds
 
-// particles
-require('../../assets/particles/confetti.json');
+// // particles
+// require('../../assets/particles/confetti.json');
+// // spines
+// require('../../assets/spines/diamond.json');
 
-// spines
-require('../../assets/spines/diamond.json');
-
-// images
+// // images
+require('../../assets/atlases/texture.png');
 require('../../assets/images/bg/bg-1.jpg');
 require('../../assets/images/bg/bg-2.jpg');
+// // import '../../assets/atlases/texture.json';
+// import texture from '../../assets/atlases/texture.png';
+// //
+// import bg1 from '../../assets/images/bg/bg-1.jpg';
+// import bg2 from '../../assets/images/bg/bg-2.jpg';
+// //
 
-require('../../assets/atlases/texture.png');
-require('../../assets/atlases/texture.json');
+// console.log(texture, bg1, bg2);
