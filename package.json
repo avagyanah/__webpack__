@@ -1,0 +1,44 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "",
+    "build-dev": "webpack --env development --config webpack/webpack.config.js",
+    "build-prod": "webpack --env production --config webpack/webpack.config.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": " ^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "base64-inline-loader": "^1.1.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.4.0",
+    "file-loader": "^6.0.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.7",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-manifest-plugin": "^2.2.0",
+    "webpack-merge": "^5.0.9"
+  },
+  "dependencies": {
+    "@armathai/lego": "^2.0.0",
+    "@armathai/lego-logger": "^2.0.0",
+    "@armathai/pixi-grid": "^1.0.1",
+    "@armathai/pixi-particles": "^1.0.2",
+    "@armathai/pixi-stats": "^1.0.1",
+    "pixi-sound": "^3.0.5",
+    "pixi-spine": "^2.1.9",
+    "pixi-tween": "^0.2.0",
+    "pixi.js-legacy": "^5.3.0",
+    "promise-polyfill": "^8.1.3"
+  }
+}
