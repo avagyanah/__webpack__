@@ -2,7 +2,7 @@
   "name": "webpack-demo",
   "version": "1.0.0",
   "scripts": {
-    "webpack-start": "node ./scripts/dev.server.js --port 8080",
+    "webpack-start": "node bundlers/webpack/dev.server.js --port 8080",
     "webpack-build-dev": "webpack --config bundlers/webpack/webpack.dev.js",
     "webpack-build-prod": "webpack --config bundlers/webpack/webpack.prod.js"
   },
