@@ -2,9 +2,6 @@
   "name": "webpack-demo",
   "version": "1.0.0",
   "scripts": {
-    "rollup-start": "rollup",
-    "rollup-build-dev": "rollup --config bundlers/rollup/rollup.config.js",
-    "rollup-build-prod": "rollup --config bundlers/rollup/rollup.config.js",
     "webpack-start": "node ./scripts/dev.server.js --port 8080",
     "webpack-build-dev": "webpack --config bundlers/webpack/webpack.dev.js",
     "webpack-build-prod": "webpack --config bundlers/webpack/webpack.prod.js"

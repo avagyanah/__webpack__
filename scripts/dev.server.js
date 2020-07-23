@@ -8,6 +8,7 @@ try {
     port,
     watchOptions: { aggregateTimeout: 0 },
     stats: { all: false, colors: true },
+    clientLogLevel: 'error',
   });
   server.listen(port, '0.0.0.0');
 } catch (err) {
