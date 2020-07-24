@@ -1,8 +1,9 @@
 import { assets } from './assets';
+import { Loader } from './loader';
 
 export class App extends PIXI.Application {
   constructor() {
-    super({ backgroundColor: 0x0, width: 500, height: 500 });
+    super({ backgroundColor: 0xffffff, width: 500, height: 500 });
 
     this._init();
   }
@@ -10,25 +11,27 @@ export class App extends PIXI.Application {
   _init() {
     document.body.appendChild(this.view);
 
-    this._ready();
+    this.loader = new Loader();
+    this.loader.onStart.add(this._onLoadStart, this);
+    this.loader.onLoad.add(this._onLoadProgress, this);
+    this.loader.onComplete.add(this._onLoadComplete, this);
+    this.loader.start(assets);
   }
 
-  _ready() {
-    const { images, sfx } = assets;
+  _onLoadStart(loader) {
+    console.log(`[ loader ] start`);
+  }
 
-    // image
-    Object.keys(images).forEach((entry) => {
-      PIXI.Texture.addToCache(new PIXI.Texture.from(images[entry].default), entry);
-    });
+  _onLoadProgress(loader, resource) {
+    console.log(`[ loader ] progress | ${loader.progress}`);
+  }
 
-    const img1 = new PIXI.Sprite.from('bg1');
+  _onLoadComplete() {
+    console.log(`[ loader ] complete`);
+
+    PIXI.sound.play('loop');
+
+    const img1 = new PIXI.Sprite.from('bg2');
     this.stage.addChild(img1);
-
-    // sfx
-    Object.keys(sfx).forEach((entry) => {
-      PIXI.sound.add(entry, sfx[entry].default);
-    });
-
-    PIXI.sound.play('tap');
   }
 }
