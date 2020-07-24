@@ -11,5 +11,10 @@
   },
   "globals": {
     "PIXI": "readonly"
-  }
+  },
+  "references": [
+    {
+      "path": "typings/pixi-sound.d.ts"
+    }
+  ]
 }

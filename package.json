@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node webpack/dev.server.js --port 8080",
-    "build-dev": "webpack --config webpack/webpack.dev.js",
-    "build-prod": "webpack --config webpack/webpack.prod.js"
+    "build": "webpack --config webpack/webpack.prod.js",
+    "build-dev": "webpack --config webpack/webpack.dev.js"
   },
   "license": "ISC",
   "devDependencies": {
@@ -35,7 +35,6 @@
     "@armathai/lego-logger": "^2.0.0",
     "@armathai/pixi-grid": "^1.0.1",
     "@armathai/pixi-particles": "^1.0.2",
-    "@armathai/pixi-stats": "^1.0.1",
     "pixi-sound": "^3.0.5",
     "pixi-spine": "^2.1.9",
     "pixi-tween": "^0.2.0",

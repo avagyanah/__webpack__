@@ -11,7 +11,6 @@ const PATHS = {
     pixiSound:      path.resolve(path.join('libs/pixi-sound', 'index.js')),
     pixiSpine:      path.resolve(path.join('libs/pixi-spine', 'index.js')),
     pixiParticles:  path.resolve(path.join('libs/pixi-particles', 'index.js')),
-    pixiStats:      path.resolve(path.join('libs/pixi-stats', 'index.js')),
     index:          path.resolve(path.join('src', 'index.js')),
     dist:           path.resolve(path.join('dist')),
 };
@@ -26,7 +25,6 @@ module.exports = () => {
             sound:      PATHS.pixiSound,
             spine:      PATHS.pixiSpine,
             particles:  PATHS.pixiParticles,
-            stats:      PATHS.pixiStats,
             index:      PATHS.index,
         },
 

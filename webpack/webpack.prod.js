@@ -52,21 +52,21 @@ module.exports = () => {
             ],
         },
 
-        optimization: {
-            minimizer: [
-                new TerserPlugin({
-                    extractComments: false,
-                    parallel: true,
-                    terserOptions: {
-                        compress: {
-                            drop_console: true,
-                        },
-                        output: {
-                            comments: false,
-                        },
-                    },
-                }),
-            ],
-        },
+        // optimization: {
+        // minimizer: [
+        //     new TerserPlugin({
+        //         extractComments: false,
+        //         parallel: true,
+        //         terserOptions: {
+        //             compress: {
+        //                 drop_console: true,
+        //             },
+        //             output: {
+        //                 comments: false,
+        //             },
+        //         },
+        //     }),
+        // ],
+        // },
     });
 };
