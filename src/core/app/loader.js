@@ -1,10 +1,10 @@
-import { atlasMiddleware, imageMiddleware, soundMiddleware } from './loader/midlewares';
+import { atlasMiddleware } from './loader/midlewares';
 
 export class Loader extends PIXI.Loader {
   constructor() {
     super();
 
-    this.use(imageMiddleware).use(atlasMiddleware).use(soundMiddleware);
+    this.use(atlasMiddleware);
   }
 
   start(assets) {
@@ -36,11 +36,23 @@ export class Loader extends PIXI.Loader {
   }
 
   _loadImages(data) {
-    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].default)));
+    Object.keys(data).forEach((key) => {
+      // v1
+      // this.add(new PIXI.LoaderResource(key, data[key].default));
+
+      // v2
+      PIXI.Texture.addToCache(new PIXI.Texture.from(data[key].default), key);
+    });
   }
 
   _loadSounds(data) {
-    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].default)));
+    Object.keys(data).forEach((key) => {
+      // v1
+      // this.add(new PIXI.LoaderResource(key, data[key].default));
+
+      // v2
+      PIXI.sound.add(key, data[key].default);
+    });
   }
 
   _loadAtlases(data) {
