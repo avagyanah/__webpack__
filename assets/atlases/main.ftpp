@@ -2,13 +2,14 @@
   "meta": {
     "version": "0.6.6"
   },
-  "savePath": "",
+  "savePath": "./",
   "images": [],
   "folders": [
+    "/home/ashot/Projects/personal/__webpack__/assets/images/particles",
     "/home/ashot/Projects/personal/__webpack__/assets/images/ui"
   ],
   "packOptions": {
-    "textureName": "texture",
+    "textureName": "main",
     "textureFormat": "png",
     "removeFileExtension": false,
     "prependFolderName": true,
@@ -20,7 +21,7 @@
     "filter": "none",
     "exporter": "pixi.js",
     "fileName": "pack-result",
-    "savePath": "",
+    "savePath": "./",
     "width": 2048,
     "height": 2048,
     "fixedSize": false,

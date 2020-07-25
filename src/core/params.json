@@ -1,0 +1,12 @@
+{
+  "lang": {
+    "value": "en",
+    "description": "",
+    "options": ["ar", "de", "en", "es", "fr", "id", "it", "ja", "ko", "nl", "pt", "ru", "tr", "zh", "zht", "cn"]
+  },
+  "mute": {
+    "value": "off",
+    "description": "",
+    "options": ["on", "off"]
+  }
+}
