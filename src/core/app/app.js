@@ -16,7 +16,7 @@ export class App extends PIXI.Application {
     this.loader.onStart.add(this._onLoadStart, this);
     this.loader.onLoad.add(this._onLoadProgress, this);
     this.loader.onComplete.add(this._onLoadComplete, this);
-    this.loader.start(assets);
+    this.loader.start();
   }
 
   _onLoadStart(loader) {

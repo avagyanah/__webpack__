@@ -1,13 +1,22 @@
-import { atlasMiddleware } from './loader/midlewares';
+import { assets } from '../assets';
+
+// export const atlasMiddleware = (resource, next) => {
+//   const { atlases } = assets;
+//   const isAtlas = Object.prototype.hasOwnProperty.call(atlases, resource.name);
+
+//   if (!isAtlas) {
+//     next();
+//     return;
+//   }
+
+//   const { json, image } = atlases[resource.name];
+//   const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
+//   atlas.parse(() => void 0);
+//   next();
+// };
 
 export class Loader extends PIXI.Loader {
-  constructor() {
-    super();
-
-    this.use(atlasMiddleware);
-  }
-
-  start(assets) {
+  start() {
     Object.keys(assets).forEach((key) => {
       const entry = assets[key];
 
@@ -56,6 +65,15 @@ export class Loader extends PIXI.Loader {
   }
 
   _loadAtlases(data) {
-    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].image.default)));
+    Object.keys(data).forEach((key) => {
+      // v1
+      // this.use(atlasMiddleware);
+      // this.add(new PIXI.LoaderResource(key, data[key].image.default));
+
+      // // v2
+      const { json, image } = data[key];
+      const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
+      atlas.parse(() => void 0);
+    });
   }
 }
