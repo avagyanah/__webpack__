@@ -1,3 +1,4 @@
+import { Particle } from '../../utils/particle';
 import { assets } from '../assets';
 import { Loader } from './loader';
 
@@ -23,33 +24,33 @@ export class App extends PIXI.Application {
   }
 
   _onLoadProgress(loader, resource) {
-    console.log(`[ loader ] progress | ${loader.progress} `, resource);
+    console.log(`[ loader ] progress | ${loader.progress} `);
   }
 
   _onLoadComplete() {
     console.log(`[ loader ] complete`);
 
-    // //
-    // //
-    // // particles;
-    // setTimeout(() => {
-    //   const particle = new Particle(assets.particles.confetti);
-    //   particle.position.set(0, 0);
-    //   particle.scale.set(1, 1);
-    //   this.stage.addChild(particle);
-    //   particle.start();
-    // }, 100);
+    //
+    //
+    // particles;
+    setTimeout(() => {
+      const particle = new Particle(assets.particles.confetti);
+      particle.position.set(0, 0);
+      particle.scale.set(1, 1);
+      this.stage.addChild(particle);
+      particle.start();
+    }, 100);
 
-    // //
-    // //
-    // // sounds
-    // PIXI.sound.play('loop');
+    //
+    //
+    // sounds
+    PIXI.sound.play('loop');
 
-    // //
-    // //
-    // // images
-    // const img1 = new PIXI.Sprite.from('bg2');
-    // this.stage.addChild(img1);
+    //
+    //
+    // images
+    const img1 = new PIXI.Sprite.from('bg2');
+    this.stage.addChild(img1);
 
     //
     // atlases

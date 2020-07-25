@@ -1,4 +1,12 @@
+import { atlasMiddleware, imageMiddleware, soundMiddleware } from './loader/midlewares';
+
 export class Loader extends PIXI.Loader {
+  constructor() {
+    super();
+
+    this.use(imageMiddleware).use(atlasMiddleware).use(soundMiddleware);
+  }
+
   start(assets) {
     Object.keys(assets).forEach((key) => {
       const entry = assets[key];
@@ -20,7 +28,7 @@ export class Loader extends PIXI.Loader {
         case 'images-localized':
           break;
         default:
-        // console.error(`Unknown asset type "${entry}"`);
+          console.error(`Unknown asset type "${entry}"`);
       }
     });
 
@@ -28,43 +36,14 @@ export class Loader extends PIXI.Loader {
   }
 
   _loadImages(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      this.add(new PIXI.LoaderResource(key, data[key].default));
-
-      // v2
-      // this.add(key, data[key].default);
-
-      // v3
-      // PIXI.Texture.addToCache(new PIXI.Texture.from(data[key].default), key);
-    });
+    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].default)));
   }
 
   _loadSounds(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      this.add(new PIXI.LoaderResource(key, data[key].default));
-
-      // v2
-      // this.add(key, data[key].default);
-
-      // v3
-      // PIXI.sound.add(key, data[key].default);
-    });
+    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].default)));
   }
 
   _loadAtlases(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      // this.add(new PIXI.LoaderResource(key, data[key].image.default));
-
-      // v2
-      // this.add(data[key].image.default);
-
-      // v3
-      const { image, json } = data[key];
-      const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
-      atlas.parse(() => void 0);
-    });
+    Object.keys(data).forEach((key) => this.add(new PIXI.LoaderResource(key, data[key].image.default)));
   }
 }
