@@ -27,11 +27,14 @@ module.exports = () => {
                                 disable: false,
                                 mozjpeg: {
                                     progressive: true,
-                                    quality: 75,
+                                    quality: 85,
+                                },
+                                optipng: {
+                                    enabled: true,
                                 },
                                 pngquant: {
-                                    quality: [0.65, 0.9],
-                                    speed: 4,
+                                    quality: [0.8, 0.9],
+                                    speed: 1,
                                 },
                             },
                         },
@@ -52,21 +55,21 @@ module.exports = () => {
             ],
         },
 
-        // optimization: {
-        // minimizer: [
-        //     new TerserPlugin({
-        //         extractComments: false,
-        //         parallel: true,
-        //         terserOptions: {
-        //             compress: {
-        //                 drop_console: true,
-        //             },
-        //             output: {
-        //                 comments: false,
-        //             },
-        //         },
-        //     }),
-        // ],
-        // },
+        optimization: {
+            minimizer: [
+                new TerserPlugin({
+                    extractComments: false,
+                    parallel: true,
+                    terserOptions: {
+                        compress: {
+                            drop_console: true,
+                        },
+                        output: {
+                            comments: false,
+                        },
+                    },
+                }),
+            ],
+        },
     });
 };

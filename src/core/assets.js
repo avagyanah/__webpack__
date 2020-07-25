@@ -9,6 +9,18 @@ export const assets = Object.freeze({
       json: require('../../assets/atlases/main.json'),
       image: require('../../assets/atlases/main.png'),
     },
+    retry: {
+      json: require('../../assets/atlases/retry.json'),
+      image: require('../../assets/atlases/retry.png'),
+    },
+    'well-done': {
+      json: require('../../assets/atlases/well-done.json'),
+      image: require('../../assets/atlases/well-done.png'),
+    },
+    'tap-to-continue': {
+      json: require('../../assets/atlases/tap-to-continue.json'),
+      image: require('../../assets/atlases/tap-to-continue.png'),
+    },
   },
 
   sounds: {

@@ -5,11 +5,10 @@
   "savePath": "./",
   "images": [],
   "folders": [
-    "/home/ashot/Projects/personal/__webpack__/assets/images/particles",
-    "/home/ashot/Projects/personal/__webpack__/assets/images/ui"
+    "/home/ashot/Projects/personal/__webpack__/assets/images/localized/well-done"
   ],
   "packOptions": {
-    "textureName": "main",
+    "textureName": "well-done",
     "textureFormat": "png",
     "removeFileExtension": false,
     "prependFolderName": true,
@@ -28,7 +27,7 @@
     "powerOfTwo": false,
     "padding": 0,
     "extrude": 0,
-    "allowRotation": false,
+    "allowRotation": true,
     "allowTrim": true,
     "trimMode": "trim",
     "alphaThreshold": "0",

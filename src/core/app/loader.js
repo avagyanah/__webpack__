@@ -70,7 +70,7 @@ export class Loader extends PIXI.Loader {
       // this.use(atlasMiddleware);
       // this.add(new PIXI.LoaderResource(key, data[key].image.default));
 
-      // // v2
+      // v2
       const { json, image } = data[key];
       const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
       atlas.parse(() => void 0);

@@ -1,431 +1,383 @@
 {
   "frames": {
-    "ui/cta_box.png": {
+    "tap-to-continue/ru.png": {
       "frame": {
         "x": 0,
         "y": 0,
-        "w": 208,
-        "h": 193
+        "w": 562,
+        "h": 28
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 208,
-        "h": 193
+        "w": 562,
+        "h": 28
       },
       "sourceSize": {
-        "w": 208,
-        "h": 193
+        "w": 562,
+        "h": 28
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/logo.png": {
+    "tap-to-continue/id.png": {
       "frame": {
         "x": 0,
-        "y": 193,
-        "w": 189,
-        "h": 74
+        "y": 28,
+        "w": 480,
+        "h": 25
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 189,
-        "h": 74
+        "w": 480,
+        "h": 25
       },
       "sourceSize": {
-        "w": 189,
-        "h": 74
+        "w": 480,
+        "h": 25
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/cta_icon.png": {
+    "tap-to-continue/tr.png": {
       "frame": {
-        "x": 208,
-        "y": 0,
-        "w": 184,
-        "h": 184
+        "x": 0,
+        "y": 53,
+        "w": 475,
+        "h": 39
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 184,
-        "h": 184
+        "w": 475,
+        "h": 39
       },
       "sourceSize": {
-        "w": 184,
-        "h": 184
+        "w": 475,
+        "h": 39
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/hand.png": {
+    "tap-to-continue/de.png": {
       "frame": {
         "x": 0,
-        "y": 267,
-        "w": 100,
-        "h": 162
+        "y": 92,
+        "w": 474,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 100,
-        "h": 162
+        "w": 474,
+        "h": 24
       },
       "sourceSize": {
-        "w": 100,
-        "h": 162
+        "w": 474,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/btn_green.png": {
+    "tap-to-continue/fr.png": {
       "frame": {
-        "x": 100,
-        "y": 267,
-        "w": 68,
-        "h": 117
+        "x": 0,
+        "y": 116,
+        "w": 453,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 68,
-        "h": 117
+        "w": 453,
+        "h": 24
       },
       "sourceSize": {
-        "w": 68,
-        "h": 117
+        "w": 453,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/btn_orange.png": {
+    "tap-to-continue/pt.png": {
       "frame": {
-        "x": 168,
-        "y": 267,
-        "w": 61,
-        "h": 92
+        "x": 0,
+        "y": 140,
+        "w": 417,
+        "h": 30
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 61,
-        "h": 92
+        "w": 417,
+        "h": 30
       },
       "sourceSize": {
-        "w": 61,
-        "h": 92
+        "w": 417,
+        "h": 30
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/sound_on.png": {
+    "tap-to-continue/nl.png": {
       "frame": {
-        "x": 168,
-        "y": 359,
-        "w": 60,
-        "h": 60
+        "x": 0,
+        "y": 170,
+        "w": 403,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 60,
-        "h": 60
+        "w": 403,
+        "h": 24
       },
       "sourceSize": {
-        "w": 60,
-        "h": 60
+        "w": 403,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "ui/sound_off.png": {
+    "tap-to-continue/it.png": {
       "frame": {
-        "x": 228,
-        "y": 359,
-        "w": 60,
-        "h": 60
+        "x": 0,
+        "y": 194,
+        "w": 401,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 60,
-        "h": 60
+        "w": 401,
+        "h": 24
       },
       "sourceSize": {
-        "w": 60,
-        "h": 60
+        "w": 401,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-08.png": {
+    "tap-to-continue/es.png": {
       "frame": {
-        "x": 100,
-        "y": 384,
-        "w": 14,
-        "h": 32
+        "x": 0,
+        "y": 218,
+        "w": 395,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 395,
+        "h": 24
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 395,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-01.png": {
+    "tap-to-continue/ko.png": {
       "frame": {
-        "x": 114,
-        "y": 384,
-        "w": 14,
-        "h": 32
+        "x": 0,
+        "y": 242,
+        "w": 334,
+        "h": 36
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 334,
+        "h": 36
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 334,
+        "h": 36
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-00.png": {
+    "tap-to-continue/en.png": {
       "frame": {
-        "x": 128,
-        "y": 384,
-        "w": 14,
-        "h": 32
+        "x": 0,
+        "y": 278,
+        "w": 294,
+        "h": 24
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 294,
+        "h": 24
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 294,
+        "h": 24
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-02.png": {
+    "tap-to-continue/ja.png": {
       "frame": {
-        "x": 142,
-        "y": 384,
-        "w": 14,
-        "h": 32
+        "x": 480,
+        "y": 28,
+        "w": 271,
+        "h": 38
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 271,
+        "h": 38
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 271,
+        "h": 38
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-03.png": {
+    "tap-to-continue/ar.png": {
       "frame": {
-        "x": 189,
-        "y": 193,
-        "w": 14,
-        "h": 32
+        "x": 518,
+        "y": 28,
+        "w": 249,
+        "h": 41
       },
-      "rotated": false,
+      "rotated": true,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 249,
+        "h": 41
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 249,
+        "h": 41
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-04.png": {
+    "tap-to-continue/cn.png": {
       "frame": {
-        "x": 189,
-        "y": 225,
-        "w": 14,
-        "h": 32
+        "x": 0,
+        "y": 302,
+        "w": 227,
+        "h": 38
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-05.png": {
+    "tap-to-continue/zh.png": {
       "frame": {
-        "x": 203,
-        "y": 193,
-        "w": 14,
-        "h": 32
+        "x": 227,
+        "y": 302,
+        "w": 227,
+        "h": 38
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "pivot": {
         "x": 0.5,
         "y": 0.5
       }
     },
-    "particles/confetti/confetti-06.png": {
+    "tap-to-continue/zht.png": {
       "frame": {
-        "x": 203,
-        "y": 225,
-        "w": 14,
-        "h": 32
+        "x": 0,
+        "y": 302,
+        "w": 227,
+        "h": 38
       },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
         "y": 0,
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "sourceSize": {
-        "w": 14,
-        "h": 32
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "particles/confetti/confetti-07.png": {
-      "frame": {
-        "x": 217,
-        "y": 184,
-        "w": 14,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 14,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 14,
-        "h": 32
-      },
-      "pivot": {
-        "x": 0.5,
-        "y": 0.5
-      }
-    },
-    "particles/confetti/confetti-09.png": {
-      "frame": {
-        "x": 217,
-        "y": 216,
-        "w": 14,
-        "h": 32
-      },
-      "rotated": false,
-      "trimmed": false,
-      "spriteSourceSize": {
-        "x": 0,
-        "y": 0,
-        "w": 14,
-        "h": 32
-      },
-      "sourceSize": {
-        "w": 14,
-        "h": 32
+        "w": 227,
+        "h": 38
       },
       "pivot": {
         "x": 0.5,
@@ -436,11 +388,11 @@
   "meta": {
     "app": "http://free-tex-packer.com",
     "version": "0.6.6",
-    "image": "main.png",
+    "image": "tap-to-continue.png",
     "format": "RGBA8888",
     "size": {
-      "w": 392,
-      "h": 429
+      "w": 562,
+      "h": 340
     },
     "scale": 1
   }

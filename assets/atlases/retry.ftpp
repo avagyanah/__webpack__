@@ -5,11 +5,10 @@
   "savePath": "./",
   "images": [],
   "folders": [
-    "/home/ashot/Projects/personal/__webpack__/assets/images/particles",
-    "/home/ashot/Projects/personal/__webpack__/assets/images/ui"
+    "/home/ashot/Projects/personal/__webpack__/assets/images/localized/retry"
   ],
   "packOptions": {
-    "textureName": "main",
+    "textureName": "retry",
     "textureFormat": "png",
     "removeFileExtension": false,
     "prependFolderName": true,
@@ -28,12 +27,12 @@
     "powerOfTwo": false,
     "padding": 0,
     "extrude": 0,
-    "allowRotation": false,
+    "allowRotation": true,
     "allowTrim": true,
     "trimMode": "trim",
     "alphaThreshold": "0",
     "detectIdentical": true,
-    "packer": "MaxRectsPacker",
-    "packerMethod": "Smart"
+    "packer": "OptimalPacker",
+    "packerMethod": "Automatic"
   }
 }
