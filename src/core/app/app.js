@@ -19,18 +19,17 @@ export class App extends PIXI.Application {
     this.loader.start();
   }
 
-  _onLoadStart(loader) {
+  _onLoadStart() {
     console.log(`[ loader ] start`);
   }
 
-  _onLoadProgress(loader, resource) {
+  _onLoadProgress(loader) {
     console.log(`[ loader ] progress | ${loader.progress} `);
   }
 
   _onLoadComplete() {
     console.log(`[ loader ] complete`);
 
-    //
     //
     // particles;
     setTimeout(() => {
@@ -42,11 +41,9 @@ export class App extends PIXI.Application {
     }, 100);
 
     //
-    //
     // sounds
     PIXI.sound.play('loop');
 
-    //
     //
     // images
     const img1 = new PIXI.Sprite.from('bg2');
@@ -54,7 +51,12 @@ export class App extends PIXI.Application {
 
     //
     // atlases
-    const texture = new PIXI.Sprite.from('ui/hand.png');
-    this.stage.addChild(texture);
+    const hand = new PIXI.Sprite.from('ui/hand.png');
+    this.stage.addChild(hand);
+
+    //
+    // localized
+    const retry = new PIXI.Sprite.from('retry');
+    this.stage.addChild(retry);
   }
 }

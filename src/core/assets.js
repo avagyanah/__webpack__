@@ -9,6 +9,9 @@ export const assets = Object.freeze({
       json: require('../../assets/atlases/main.json'),
       image: require('../../assets/atlases/main.png'),
     },
+  },
+
+  'localized-atlases': {
     retry: {
       json: require('../../assets/atlases/retry.json'),
       image: require('../../assets/atlases/retry.png'),
@@ -34,10 +37,6 @@ export const assets = Object.freeze({
 
   particles: {
     confetti: require('../../assets/particles/confetti.json'),
-  },
-
-  'images-localized': {
-    //
   },
 
   // spines: {

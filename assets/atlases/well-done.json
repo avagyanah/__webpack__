@@ -122,12 +122,12 @@
     },
     "well-done/ja.png": {
       "frame": {
-        "x": 494,
-        "y": 152,
+        "x": 0,
+        "y": 654,
         "w": 464,
         "h": 135
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -146,8 +146,8 @@
     },
     "well-done/tr.png": {
       "frame": {
-        "x": 0,
-        "y": 654,
+        "x": 686,
+        "y": 0,
         "w": 459,
         "h": 123
       },
@@ -170,12 +170,12 @@
     },
     "well-done/pt.png": {
       "frame": {
-        "x": 686,
-        "y": 0,
+        "x": 464,
+        "y": 654,
         "w": 437,
         "h": 114
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -194,8 +194,8 @@
     },
     "well-done/ru.png": {
       "frame": {
-        "x": 0,
-        "y": 777,
+        "x": 480,
+        "y": 527,
         "w": 428,
         "h": 118
       },
@@ -218,12 +218,12 @@
     },
     "well-done/it.png": {
       "frame": {
-        "x": 629,
-        "y": 437,
+        "x": 686,
+        "y": 123,
         "w": 424,
         "h": 116
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -242,12 +242,12 @@
     },
     "well-done/ko.png": {
       "frame": {
-        "x": 800,
-        "y": 0,
+        "x": 485,
+        "y": 278,
         "w": 334,
         "h": 106
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -266,12 +266,12 @@
     },
     "well-done/fr.png": {
       "frame": {
-        "x": 745,
-        "y": 437,
+        "x": 485,
+        "y": 384,
         "w": 334,
         "h": 109
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -291,7 +291,7 @@
     "well-done/ar.png": {
       "frame": {
         "x": 0,
-        "y": 895,
+        "y": 789,
         "w": 331,
         "h": 126
       },
@@ -314,8 +314,8 @@
     },
     "well-done/zh.png": {
       "frame": {
-        "x": 331,
-        "y": 895,
+        "x": 819,
+        "y": 239,
         "w": 313,
         "h": 109
       },
@@ -338,12 +338,12 @@
     },
     "well-done/cn.png": {
       "frame": {
-        "x": 906,
-        "y": 0,
+        "x": 819,
+        "y": 348,
         "w": 310,
         "h": 104
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -362,12 +362,12 @@
     },
     "well-done/zht.png": {
       "frame": {
-        "x": 906,
-        "y": 0,
+        "x": 819,
+        "y": 348,
         "w": 310,
         "h": 104
       },
-      "rotated": true,
+      "rotated": false,
       "trimmed": false,
       "spriteSourceSize": {
         "x": 0,
@@ -391,8 +391,8 @@
     "image": "well-done.png",
     "format": "RGBA8888",
     "size": {
-      "w": 1010,
-      "h": 1021
+      "w": 1145,
+      "h": 915
     },
     "scale": 1
   }
