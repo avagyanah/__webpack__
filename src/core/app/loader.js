@@ -1,26 +1,26 @@
 import { assets } from '../assets';
 import { lang } from '../params.json';
 
-// export const atlasMiddleware = (resource, next) => {
-//   const { atlases } = assets;
-//   const isAtlas = Object.prototype.hasOwnProperty.call(atlases, resource.name);
+const atlasMiddleware = (resource, next) => {
+  const { atlases } = assets;
+  const isAtlas = Object.prototype.hasOwnProperty.call(atlases, resource.name);
 
-//   if (!isAtlas) {
-//     next();
-//     return;
-//   }
+  if (!isAtlas) {
+    next();
+    return;
+  }
 
-//   const { json, image } = atlases[resource.name];
-//   const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
-//   atlas.parse(() => void 0);
-//   next();
-// };
+  const { json, image } = atlases[resource.name];
+  const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
+  atlas.parse(() => void 0);
+  next();
+};
 
 export class Loader extends PIXI.Loader {
   constructor() {
     super();
 
-    // this.use(atlasMiddleware);
+    this.use(atlasMiddleware);
   }
 
   start() {
@@ -53,35 +53,15 @@ export class Loader extends PIXI.Loader {
   }
 
   _loadImages(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      // this.add(new PIXI.LoaderResource(key, data[key].default));
-
-      // v2
-      PIXI.Texture.addToCache(new PIXI.Texture.from(data[key].default), key);
-    });
+    Object.keys(data).forEach((key) => this.add(key, data[key].default));
   }
 
   _loadSounds(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      // this.add(new PIXI.LoaderResource(key, data[key].default));
-
-      // v2
-      PIXI.sound.add(key, data[key].default);
-    });
+    Object.keys(data).forEach((key) => this.add(key, data[key].default));
   }
 
   _loadAtlases(data) {
-    Object.keys(data).forEach((key) => {
-      // v1
-      // this.add(new PIXI.LoaderResource(key, data[key].image.default));
-
-      // v2
-      const { json, image } = data[key];
-      const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
-      atlas.parse(() => void 0);
-    });
+    Object.keys(data).forEach((key) => this.add(key, data[key].image.default));
   }
 
   _loadLocalizedAtlases(data) {

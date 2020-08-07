@@ -29,7 +29,6 @@ export class App extends PIXI.Application {
 
   _onLoadComplete() {
     console.log(`[ loader ] complete`);
-
     //
     // particles;
     setTimeout(() => {
@@ -39,21 +38,17 @@ export class App extends PIXI.Application {
       this.stage.addChild(particle);
       particle.start();
     }, 100);
-
     //
     // sounds
     PIXI.sound.play('loop');
-
     //
     // images
     const img1 = new PIXI.Sprite.from('bg2');
     this.stage.addChild(img1);
-
     //
     // atlases
     const hand = new PIXI.Sprite.from('ui/hand.png');
     this.stage.addChild(hand);
-
     //
     // localized
     const retry = new PIXI.Sprite.from('retry');

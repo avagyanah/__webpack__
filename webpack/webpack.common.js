@@ -4,15 +4,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
 
 // prettier-ignore
 const PATHS = {
-    html:           path.resolve(path.join('html', 'index.hbs')),
-    promise:        path.resolve(path.join('libs/promise-polyfill', 'index.js')),
-    pixi:           path.resolve(path.join('libs/pixi-legacy', 'index.js')),
-    pixiTween:      path.resolve(path.join('libs/pixi-tween', 'index.js')),
-    pixiSound:      path.resolve(path.join('libs/pixi-sound', 'index.js')),
-    pixiSpine:      path.resolve(path.join('libs/pixi-spine', 'index.js')),
-    pixiParticles:  path.resolve(path.join('libs/pixi-particles', 'index.js')),
-    index:          path.resolve(path.join('src', 'index.js')),
-    dist:           path.resolve(path.join('dist')),
+    html:           path.resolve('html/index.hbs'),
+    promise:        path.resolve('libs/promise-polyfill/index.js'),
+    pixi:           path.resolve('libs/pixi-legacy/index.js'),
+    pixiTween:      path.resolve('libs/pixi-tween/index.js'),
+    pixiSound:      path.resolve('libs/pixi-sound/index.js'),
+    pixiSpine:      path.resolve('libs/pixi-spine/index.js'),
+    pixiParticles:  path.resolve('libs/pixi-particles/index.js'),
+    index:          path.resolve('src/index.js'),
+    dist:           path.resolve('dist'),
 };
 
 module.exports = () => {
