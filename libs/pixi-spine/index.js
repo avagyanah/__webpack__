@@ -1,1 +1,1 @@
-import 'pixi-spine';
+require('pixi-spine');

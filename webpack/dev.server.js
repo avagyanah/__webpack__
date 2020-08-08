@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const devConfig = require('./webpack.dev')();
-const port = require('minimist')(process.argv.slice(2)).port || 3000;
+const port = require('../scripts/utils').getProcessArg('port');
 
 try {
     const server = new WebpackDevServer(webpack(devConfig), {
@@ -10,7 +10,7 @@ try {
         stats: { all: false, errors: true, colors: true },
         clientLogLevel: 'error',
     });
-    server.listen(port, '0.0.0.0');
+    server.listen(port);
 } catch (err) {
     console.error(err);
 }

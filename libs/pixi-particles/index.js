@@ -1,1 +1,1 @@
-import '@armathai/pixi-particles';
+require('@armathai/pixi-particles');

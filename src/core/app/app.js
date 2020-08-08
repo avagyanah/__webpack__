@@ -29,6 +29,7 @@ export class App extends PIXI.Application {
 
   _onLoadComplete() {
     console.log(`[ loader ] complete`);
+
     //
     // particles;
     setTimeout(() => {

@@ -56,6 +56,15 @@ module.exports = () => {
         },
 
         optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    vendor: {
+                        test: /[\\/]node_modules[\\/]/,
+                        name: 'vendor',
+                        chunks: 'all',
+                    },
+                },
+            },
             minimizer: [
                 new TerserPlugin({
                     extractComments: false,

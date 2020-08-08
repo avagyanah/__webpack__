@@ -1,1 +1,1 @@
-import 'promise-polyfill/dist/polyfill';
+require('promise-polyfill/dist/polyfill');

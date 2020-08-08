@@ -6,13 +6,12 @@ const atlasMiddleware = (resource, next) => {
   const isAtlas = Object.prototype.hasOwnProperty.call(atlases, resource.name);
 
   if (!isAtlas) {
-    next();
-    return;
+    return next();
   }
 
   const { json, image } = atlases[resource.name];
   const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
-  atlas.parse(() => void 0);
+  atlas.parse(() => undefined);
   next();
 };
 
@@ -53,19 +52,19 @@ export class Loader extends PIXI.Loader {
   }
 
   _loadImages(data) {
-    Object.keys(data).forEach((key) => this.add(key, data[key].default));
+    Object.keys(data).every((key) => this.add(key, data[key].default));
   }
 
   _loadSounds(data) {
-    Object.keys(data).forEach((key) => this.add(key, data[key].default));
+    Object.keys(data).every((key) => this.add(key, data[key].default));
   }
 
   _loadAtlases(data) {
-    Object.keys(data).forEach((key) => this.add(key, data[key].image.default));
+    Object.keys(data).every((key) => this.add(key, data[key].image.default));
   }
 
   _loadLocalizedAtlases(data) {
-    Object.keys(data).forEach((key) => {
+    Object.keys(data).every((key) => {
       // v1
       const { json, image } = data[key];
       const frameData = json.frames[`${key}/${lang.value}.png`];
@@ -76,16 +75,11 @@ export class Loader extends PIXI.Loader {
       // sourceSize: {w: 220, h: 56}
       // spriteSourceSize: {x: 0, y: 0, w: 220, h: 56}
       // trimmed: false
+
       const { frame } = frameData;
       const { x, y, w, h } = frame;
       const texture = new PIXI.Texture(new PIXI.BaseTexture(image.default), new PIXI.Rectangle(x, y, w, h));
       PIXI.Texture.addToCache(texture, key);
-
-      // console.warn(frame);
-      // json.frames[key] = frame;
-
-      // const atlas = new PIXI.Spritesheet(PIXI.BaseTexture.from(image.default), json);
-      // atlas.parse(() => void 0);
     });
   }
 }
