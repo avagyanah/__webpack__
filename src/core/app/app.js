@@ -1,3 +1,4 @@
+import { StatsObservant } from '../../observants/stats-observant';
 import { Particle } from '../../utils/particle';
 import { assets } from '../assets';
 import { Loader } from './loader';
@@ -11,6 +12,9 @@ export class App extends PIXI.Application {
 
   _init() {
     document.body.appendChild(this.view);
+    this.view.classList.add('center');
+
+    new StatsObservant(this);
 
     this.loader = new Loader();
     this.loader.onStart.add(this._onLoadStart, this);

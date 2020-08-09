@@ -8,6 +8,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@armathai/pixi-stats": "^1.0.1",
     "@babel/core": "^7.10.5",
     "babel-loader": "^8.1.0",
     "base64-inline-loader": "^1.1.1",
